@@ -1,0 +1,80 @@
+.contenedor
+{
+    width: 30%;
+    background-color: lavender;
+    padding: 20px;
+}
+
+.dcerrar
+{
+    display: flex;
+    justify-content: flex-end;
+  
+}
+
+input[type='text']{
+    height: 30px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display:inline-block;
+    box-sizing: border-box;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-around;
+}
+
+.modifica
+{  
+    background-color: green;
+    font-size:large ;
+    width: 90px;
+    height: 50px;
+    color:white;
+    font-weight: lighter;
+    border-radius: 15px;
+    box-shadow: 5px; 
+}
+
+.elimina
+{ 
+    background-color: red;
+    font-size:large ;
+    width: 90px;
+    height: 50px;
+    color:white;
+    font-weight: lighter;
+    border-radius: 15px;
+    box-shadow: 5px;   
+}
+
+.error{
+    border: 2px solid red ;
+}
+
+#cerrar{
+    background-color: black;
+    color: white;
+}
+
+.gif{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    animation-duration: 1s;
+}
+
+thead.tabla{
+    background-color:darkcyan;
+    text-align: left;
+    color: white;
+    size: 60px;
+    
+}
+
+tr:nth-child(even){
+    background-color: gainsboro
+}
