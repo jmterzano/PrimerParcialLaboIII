@@ -3,6 +3,7 @@
     width: 30%;
     background-color: lavender;
     padding: 20px;
+    background-image: url("./img/fondo.jpg");
 }
 
 .dcerrar
@@ -14,7 +15,7 @@
 
 input[type='text']{
     height: 30px;
-    width: 100%;
+    width: 50%;
     margin-top: 5px;
     margin-bottom: 5px;
     display:inline-block;
@@ -77,4 +78,10 @@ thead.tabla{
 
 tr:nth-child(even){
     background-color: gainsboro
+}
+
+label{
+    background-color: greenyellow;
+    border-radius: 5px;
+    
 }
