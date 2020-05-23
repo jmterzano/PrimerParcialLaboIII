@@ -67,7 +67,7 @@ function clickGrilla(event)
     document.getElementById("id").value=trClick.getAttribute("idPersona");
     document.getElementById("nombre").value=trClick.childNodes[0].innerHTML;
     document.getElementById("cuatrimestre").value=trClick.childNodes[1].innerHTML;
-    document.getElementById("fecha").value=new Date(trClick.childNodes[2].innerHTML);
+    document.getElementById("fecha").value=sacarfecha(trClick.childNodes[2].innerHTML);
    
     if(trClick.childNodes[3].innerHTML=="Mañana")
     {
@@ -130,8 +130,15 @@ var json={id:document.getElementById("id").value}
 document.getElementById("gif").hidden=false;
 http.send(JSON.stringify(json));
 
-
 } 
+
+function sacarfecha(valor){
+
+    var fechaEnArray = valor.split("/");
+
+    return fechaEnArray[2]+"-"+fechaEnArray[1]+"-"+fechaEnArray[0];
+
+}
 
 
 
